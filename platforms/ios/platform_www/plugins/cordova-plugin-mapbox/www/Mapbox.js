@@ -49,322 +49,322 @@ viewportScale = screenWidth / window.innerWidth;
 
 function getAbsoluteMargins(mapDiv) {
 
-    var pageRect = getPageRect();
+  var pageRect = getPageRect();
 
-    var rect = mapDiv.getBoundingClientRect();
+  var rect = mapDiv.getBoundingClientRect();
 
-    return {
-        'top': (pageRect.top + rect.top) * viewportScale,
-        'right':  ((pageRect.left + pageRect.width) - rect.right) * viewportScale,
-        'bottom': ((pageRect.top + pageRect.height) - rect.bottom) * viewportScale,
-        'left': (pageRect.left + rect.left) * viewportScale
-    };
+  return {
+    'top': (pageRect.top + rect.top) * viewportScale,
+    'right':  ((pageRect.left + pageRect.width) - rect.right) * viewportScale,
+    'bottom': ((pageRect.top + pageRect.height) - rect.bottom) * viewportScale,
+    'left': (pageRect.left + rect.left) * viewportScale
+  };
 }
 
 
 function getDomElementsOverlay(mapDiv) {
-    var children = getAllChildren(mapDiv);
+  var children = getAllChildren(mapDiv);
 
-    var elements = [];
-    var element;
+  var elements = [];
+  var element;
 
-    for (var i = 0; i < children.length; i++) {
-        element = getDomElementOverlay(children[i]);
+  for (var i = 0; i < children.length; i++) {
+    element = getDomElementOverlay(children[i]);
 
-        elements.push(element);
-    }
-    return elements;
+    elements.push(element);
+  }
+  return elements;
 }
 
 function getDomElementOverlay(elem) {
-    var elemId = elem.getAttribute("data-pluginDomId");
-    if (!elemId) {
-        elemId = setRandomId();
-        elem.setAttribute("data-pluginDomId", elemId);
-    }
-    return {
-        id: elemId,
-        size: getDivRect(elem)
-    }
+  var elemId = elem.getAttribute("data-pluginDomId");
+  if (!elemId) {
+    elemId = setRandomId();
+    elem.setAttribute("data-pluginDomId", elemId);
+  }
+  return {
+    id: elemId,
+    size: getDivRect(elem)
+  }
 }
 
 function setRandomId() {
-    return "pmb" + Math.floor(Math.random() * Date.now());
+  return "pmb" + Math.floor(Math.random() * Date.now());
 }
 
 function getAllChildren(root) {
-    var list = [];
-    var clickable;
-    var style, displayCSS, opacityCSS, visibilityCSS;
-    var search = function (node) {
-        while (node != null) {
-            if (node.nodeType == 1) {
-                style = window.getComputedStyle(node);
-                visibilityCSS = style.getPropertyValue('visibility');
-                displayCSS = style.getPropertyValue('display');
-                opacityCSS = style.getPropertyValue('opacity');
-                if (displayCSS !== "none" && opacityCSS > 0 && visibilityCSS != "hidden") {
-                    clickable = node.getAttribute("data-clickable");
-                    if (clickable &&
-                        clickable.toLowerCase() === "false" &&
-                        node.hasChildNodes()) {
-                        Array.prototype.push.apply(list, getAllChildren(node));
-                    } else {
-                        list.push(node);
-                    }
-                }
-            }
-            node = node.nextSibling;
+  var list = [];
+  var clickable;
+  var style, displayCSS, opacityCSS, visibilityCSS;
+  var search = function (node) {
+    while (node != null) {
+      if (node.nodeType == 1) {
+        style = window.getComputedStyle(node);
+        visibilityCSS = style.getPropertyValue('visibility');
+        displayCSS = style.getPropertyValue('display');
+        opacityCSS = style.getPropertyValue('opacity');
+        if (displayCSS !== "none" && opacityCSS > 0 && visibilityCSS != "hidden") {
+          clickable = node.getAttribute("data-clickable");
+          if (clickable &&
+            clickable.toLowerCase() === "false" &&
+            node.hasChildNodes()) {
+            Array.prototype.push.apply(list, getAllChildren(node));
+          } else {
+            list.push(node);
+          }
         }
-    };
-    search(root.firstChild);
-    return list;
+      }
+      node = node.nextSibling;
+    }
+  };
+  search(root.firstChild);
+  return list;
 }
 
 
 function getDivRect(div) {
-    if (!div) {
-        return;
-    }
+  if (!div) {
+    return;
+  }
 
-    var pageRect = getPageRect();
+  var pageRect = getPageRect();
 
-    var rect = div.getBoundingClientRect();
-    return {
-        'left': (rect.left + pageRect.left) * viewportScale,
-        'top': (rect.top + pageRect.top) * viewportScale,
-        'width': (rect.width) * viewportScale,
-        'height': (rect.height) * viewportScale
-    };
+  var rect = div.getBoundingClientRect();
+  return {
+    'left': (rect.left + pageRect.left) * viewportScale,
+    'top': (rect.top + pageRect.top) * viewportScale,
+    'width': (rect.width) * viewportScale,
+    'height': (rect.height) * viewportScale
+  };
 }
 
 function getPageRect() {
-    var doc = document.documentElement;
+  var doc = document.documentElement;
 
-    var pageWidth = window.innerWidth ||
-            document.documentElement.clientWidth ||
-            document.body.clientWidth,
-        pageHeight = window.innerHeight ||
-            document.documentElement.clientHeight ||
-            document.body.clientHeight;
-    var pageLeft = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-    var pageTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+  var pageWidth = window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth,
+    pageHeight = window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight;
+  var pageLeft = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
+  var pageTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
 
-    return {
-        'width': pageWidth,
-        'height': pageHeight,
-        'left': pageLeft,
-        'top': pageTop
-    };
+  return {
+    'width': pageWidth,
+    'height': pageHeight,
+    'left': pageLeft,
+    'top': pageTop
+  };
 }
 
 module.exports = {
-    show: function (options, successCallback, errorCallback, id) {
-        id = id || 0;
-        if (options.domElement) {
-            options.HTMLs = getDomElementsOverlay(options.domElement);
-            options.rect = getDivRect(options.domElement);
-            delete options.domElement; //Prevent circular reference error
-        }
-        cordova.exec(successCallback, errorCallback, "Mapbox", "show", [id, options]);
-    },
+  show: function (options, successCallback, errorCallback, id) {
+    id = id || 0;
+    if (options.domElement) {
+      options.HTMLs = getDomElementsOverlay(options.domElement);
+      options.rect = getDivRect(options.domElement);
+      delete options.domElement; //Prevent circular reference error
+    }
+    cordova.exec(successCallback, errorCallback, "Mapbox", "show", [id, options]);
+  },
 
-    refreshMap: function (options, successCallback, errorCallback, id) {
-        id = id || 0;
+  refreshMap: function (options, successCallback, errorCallback, id) {
+    id = id || 0;
 
-        if(options.domElement) {
-            options.HTMLs = getDomElementsOverlay(options.domElement);
-            options.rect = getDivRect(options.domElement);
-            delete options.domElement; //Prevent circular reference error
-        }
+    if(options.domElement) {
+      options.HTMLs = getDomElementsOverlay(options.domElement);
+      options.rect = getDivRect(options.domElement);
+      delete options.domElement; //Prevent circular reference error
+    }
 
-        cordova.exec(successCallback, errorCallback, "Mapbox", "refreshMap", [id, options])
-    },
+    cordova.exec(successCallback, errorCallback, "Mapbox", "refreshMap", [id, options])
+  },
 
-    /*DOES NOT INCLUDED IN MAPBOX*/
-    // setDebug: function (debug, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "setDebug", [id, debug])
-    // },
-    //
-    // setAssetsDirectory: function (directory, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "setAssetsDirectory", [id, directory])
-    // },
+  /*DOES NOT INCLUDED IN MAPBOX*/
+  // setDebug: function (debug, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "setDebug", [id, debug])
+  // },
+  //
+  // setAssetsDirectory: function (directory, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "setAssetsDirectory", [id, directory])
+  // },
 
-    setClickable: function (clickable, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "setClickable", [id, clickable])
-    },
+  setClickable: function (clickable, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "setClickable", [id, clickable])
+  },
 
-    hide: function (id, successCallback, errorCallback) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "hide", [id]);
-    },
+  hide: function (id, successCallback, errorCallback) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "hide", [id]);
+  },
 
-    // setContainer: function (container, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     container.HTMLs = getDomElementsOverlay(container.domElement);
-    //     container.rect = getDivRect(container.domElement);
-    //     delete container.domElement; //Prevent circular reference error
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "setContainer", [id, container])
-    // },
+   setContainer: function (container, successCallback, errorCallback, id) {
+       id = id || 0;
+       container.HTMLs = getDomElementsOverlay(container.domElement);
+       container.rect = getDivRect(container.domElement);
+       delete container.domElement; //Prevent circular reference error
+       cordova.exec(successCallback, errorCallback, "Mapbox", "setContainer", [id, container])
+   },
 
-    // downloadCurrentMap: function (id, statusCallback, errorCallback) {
-    //     id = id || 0;
-    //     cordova.exec(statusCallback, errorCallback, "Mapbox", "downloadCurrentMap", [id]);
-    // },
-    //
-    // getOfflineRegionsList: function (id, successCallback, errorCallback) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "getOfflineRegionsList", [id]);
-    // },
-    //
-    // deleteOfflineRegion: function (id, zoneId, successCallback, errorCallback) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "deleteOfflineRegion", [id, zoneId]);
-    // },
+  // downloadCurrentMap: function (id, statusCallback, errorCallback) {
+  //     id = id || 0;
+  //     cordova.exec(statusCallback, errorCallback, "Mapbox", "downloadCurrentMap", [id]);
+  // },
+  //
+  // getOfflineRegionsList: function (id, successCallback, errorCallback) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "getOfflineRegionsList", [id]);
+  // },
+  //
+  // deleteOfflineRegion: function (id, zoneId, successCallback, errorCallback) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "deleteOfflineRegion", [id, zoneId]);
+  // },
 
-    // pauseDownload: function (id, successCallback, errorCallback) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "pauseDownload", [id]);
-    // },
+  // pauseDownload: function (id, successCallback, errorCallback) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "pauseDownload", [id]);
+  // },
 
-    addMarkerCallback: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "addMarkerCallback", [id]);
-    },
+  addMarkerCallback: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "addMarkerCallback", [id]);
+  },
 
-    //only handle marker for now
-    addSource: function (sourceId, source, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "addMarkers", [id, sourceId, source]);
-    },
+  //only handle marker for now
+  addSource: function (sourceId, source, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "addMarkers", [id, sourceId, source]);
+  },
 
-    removeMarker: function (sourceId, markerId, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "removeMarker", [id, sourceId, markerId]);
-    },
+  removeMarker: function (sourceId, markerId, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "removeMarker", [id, sourceId, markerId]);
+  },
 
-    onRegionWillChange: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionWillChange", [id]);
-    },
-    onRegionIsChanging: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionIsChanging", [id]);
-    },
-    onRegionDidChange: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionDidChange", [id]);
-    },
+  onRegionWillChange: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionWillChange", [id]);
+  },
+  onRegionIsChanging: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionIsChanging", [id]);
+  },
+  onRegionDidChange: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionDidChange", [id]);
+  },
 
 
-    // //only handle marker for now
-    // updateSource: function (sourceId, source, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "updateMarker", [id, sourceId, source])
-    // },
+  // //only handle marker for now
+  // updateSource: function (sourceId, source, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "updateMarker", [id, sourceId, source])
+  // },
 
-    // removeSource: function (sourceId, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "removeMarker", [id, sourceId])
-    // },
-    //
-    // flyTo: function (options, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "flyTo", [id, options]);
-    // },
-    //
-    // addToggleTrackingCallback: function (callback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(callback, errorCallback, "Mapbox", "toggleTracking", [id])
-    // },
+  // removeSource: function (sourceId, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "removeMarker", [id, sourceId])
+  // },
+  //
+  // flyTo: function (options, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "flyTo", [id, options]);
+  // },
+  //
+  // addToggleTrackingCallback: function (callback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(callback, errorCallback, "Mapbox", "toggleTracking", [id])
+  // },
 
-    setCenter: function (center, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "setCenter", [id, center]);
-    },
+  setCenter: function (center, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "setCenter", [id, center]);
+  },
 
-    getCenter: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "getCenter", [id]);
-    },
+  getCenter: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "getCenter", [id]);
+  },
 
-	setTilt: function (center, successCallback, errorCallback, id) {
-    	id = id || 0;
-    	cordova.exec(successCallback, errorCallback, "Mapbox", "setTilt", [id, center]);
-	},
+  setTilt: function (center, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "setTilt", [id, center]);
+  },
 
-	getTilt: function (center, successCallback, errorCallback, id) {
-    	id = id || 0;
-    	cordova.exec(successCallback, errorCallback, "Mapbox", "getTilt", [id, center]);
-	},
+  getTilt: function (center, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "getTilt", [id, center]);
+  },
 
-    // getNextPositions: function (delta, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "nextMarkersPositionsPredicate", [id, delta]);
-    // },
-    //
-    // getMarkersPositions: function (successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "getMarkersPositions", [id]);
-    // },
-    //
-    // scrollMap: function (delta, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "scrollMap", [id, delta]);
-    // },
+  // getNextPositions: function (delta, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "nextMarkersPositionsPredicate", [id, delta]);
+  // },
+  //
+  // getMarkersPositions: function (successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "getMarkersPositions", [id]);
+  // },
+  //
+  // scrollMap: function (delta, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "scrollMap", [id, delta]);
+  // },
 
-    // setPitch: function (pitch, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "setPitch", [id, pitch]);
-    // },
-    //
-    // getPitch: function (successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "getPitch", [id]);
-    // },
+  // setPitch: function (pitch, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "setPitch", [id, pitch]);
+  // },
+  //
+  // getPitch: function (successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "getPitch", [id]);
+  // },
 
-    getZoomLevel: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "getZoomLevel", [id]);
-    },
+  getZoomLevel: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "getZoomLevel", [id]);
+  },
 
-    setZoomLevel: function (zoom, options, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "setZoomLevel", [id, zoom, options]);
-    },
+  setZoomLevel: function (zoom, options, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "setZoomLevel", [id, zoom, options]);
+  },
 
-    // zoomTo: function (zoom, options, successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "zoomTo", [id, zoom, options]);
-    // },
+  // zoomTo: function (zoom, options, successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "zoomTo", [id, zoom, options]);
+  // },
 
-    getBounds: function (successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "getBounds", [id]);
-    },
+  getBounds: function (successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "getBounds", [id]);
+  },
 
-    // getCameraPosition: function (successCallback, errorCallback, id) {
-    //     id = id || 0;
-    //     cordova.exec(successCallback, errorCallback, "Mapbox", "getCameraPosition", [id]);
-    // },
+  // getCameraPosition: function (successCallback, errorCallback, id) {
+  //     id = id || 0;
+  //     cordova.exec(successCallback, errorCallback, "Mapbox", "getCameraPosition", [id]);
+  // },
 
-    convertCoordinates: function (coords, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "convertCoordinates", [id, coords]);
-    },
+  convertCoordinates: function (coords, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "convertCoordinates", [id, coords]);
+  },
 
-    convertPoint: function (point, successCallback, errorCallback, id) {
-        id = id || 0;
-        cordova.exec(successCallback, errorCallback, "Mapbox", "convertPoint", [id, point]);
-    },
+  convertPoint: function (point, successCallback, errorCallback, id) {
+    id = id || 0;
+    cordova.exec(successCallback, errorCallback, "Mapbox", "convertPoint", [id, point]);
+  },
 
-    // addOnMapChangeListener: function (listener, callback, id) {
-    //     id = id || 0;
-    //     cordova.exec(callback, null, "Mapbox", "addOnMapChangeListener", [id, listener]);
-    // },
+  // addOnMapChangeListener: function (listener, callback, id) {
+  //     id = id || 0;
+  //     cordova.exec(callback, null, "Mapbox", "addOnMapChangeListener", [id, listener]);
+  // },
 };
 
 });
