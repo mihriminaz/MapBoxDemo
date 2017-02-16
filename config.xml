@@ -24,7 +24,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="ios" spec="~4.3.1" />
-    <plugin name="cordova-plugin-mapbox" spec="../MapBox">
+    <plugin name="cordova-plugin-mapbox" spec="../Mapbox">
         <variable name="ACCESS_TOKEN" value="pk.eyJ1IjoiYXlzZW1pIiwiYSI6ImNpejZ2MGFtcjAwNDYzM213MXQzcnV0cncifQ.Om6KMgvxyi3jVSBeJZz19w" />
     </plugin>
 </widget>

@@ -26,7 +26,7 @@
     _initArgs = [[NSDictionary alloc] initWithDictionary:args];
     _cdvMapbox = plugin;
     _mapFrame = mapFrame;
-    _existingMarkersArray = [[NSArray alloc] init];
+    _existingMarkersArray = [[NSMutableArray alloc] init];
     self.webView = _cdvMapbox.webView;
 
     return self;
@@ -145,24 +145,23 @@
             point.subtitle = [marker valueForKey:@"subtitle"];
             NSMutableDictionary *pointDict = [[NSMutableDictionary alloc] init];
             [pointDict setObject:point forKey:@"annotation"];
-            [pointDict setValue:[marker valueForKey:@"id"] forKey:@"annotationIdentifier"];
-            [_existingMarkersArray addObject: point];
+            [pointDict setValue:[marker valueForKey:@"idXXXX"] forKey:@"annotationIdentifier"];
+            [_existingMarkersArray addObject: pointDict];
             [self.mapView addAnnotation:point];
         }
+        NSLog(@"_existingMarkersArray %@", _existingMarkersArray);
     }];
 }
 
 - (void)removeAnnotationOnTheMap:(NSString *)annotationId {
-    if (_initArgs[@"markers"]) {
-        for (int i = 0; i < _existingMarkersArray.count; i++) {
-            NSDictionary* existingMarker = _existingMarkersArray[i];
-            NSString *idOfExistingAnnotation = [existingMarker valueForKey:@"id"];
-            MGLPointAnnotation *annotation = [existingMarker valueForKey:@"annotation"];
-            if ((idOfExistingAnnotation == annotationId) && (idOfExistingAnnotation != nil) && (annotation != nil)) {
-                [_cdvMapbox.commandDelegate runInBackground:^{
-                    [self.mapView removeAnnotation:annotation];
-                }];
-            }
+    for (int i = 0; i < _existingMarkersArray.count; i++) {
+        NSDictionary* existingMarker = _existingMarkersArray[i];
+        NSString *idOfExistingAnnotation = [existingMarker valueForKey:@"annotationIdentifier"];
+        MGLPointAnnotation *annotation = [existingMarker valueForKey:@"annotation"];
+        if ((idOfExistingAnnotation == annotationId) && (idOfExistingAnnotation != nil) && (annotation != nil)) {
+            [_cdvMapbox.commandDelegate runInBackground:^{
+                [self.mapView removeAnnotation:annotation];
+            }];
         }
     }
 }

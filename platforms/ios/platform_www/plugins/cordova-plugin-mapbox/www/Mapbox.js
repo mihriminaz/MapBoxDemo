@@ -230,9 +230,9 @@ module.exports = {
     //     cordova.exec(successCallback, errorCallback, "Mapbox", "pauseDownload", [id]);
     // },
 
-    addMarkerCallback: function (id, callback, errorCallback) {
+    addMarkerCallback: function (successCallback, errorCallback, id) {
         id = id || 0;
-        cordova.exec(callback, errorCallback, "Mapbox", "addMarkerCallback", [id]);
+        cordova.exec(successCallback, errorCallback, "Mapbox", "addMarkerCallback", [id]);
     },
 
     //only handle marker for now
@@ -245,6 +245,20 @@ module.exports = {
         id = id || 0;
         cordova.exec(successCallback, errorCallback, "Mapbox", "removeMarker", [id, sourceId, markerId]);
     },
+
+    onRegionWillChange: function (successCallback, errorCallback, id) {
+        id = id || 0;
+        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionWillChange", [id]);
+    },
+    onRegionIsChanging: function (successCallback, errorCallback, id) {
+        id = id || 0;
+        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionIsChanging", [id]);
+    },
+    onRegionDidChange: function (successCallback, errorCallback, id) {
+        id = id || 0;
+        cordova.exec(successCallback, errorCallback, "Mapbox", "onRegionDidChange", [id]);
+    },
+
 
     // //only handle marker for now
     // updateSource: function (sourceId, source, successCallback, errorCallback, id) {

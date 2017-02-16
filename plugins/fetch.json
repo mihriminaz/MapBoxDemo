@@ -10,9 +10,11 @@
     "cordova-plugin-mapbox": {
         "source": {
             "type": "local",
-            "path": "../MapBox"
+            "path": "../Mapbox"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "ACCESS_TOKEN": "pk.eyJ1IjoiYXlzZW1pIiwiYSI6ImNpejZ2MGFtcjAwNDYzM213MXQzcnV0cncifQ.Om6KMgvxyi3jVSBeJZz19w"
+        }
     }
 }
