@@ -291,6 +291,16 @@ module.exports = {
         cordova.exec(successCallback, errorCallback, "Mapbox", "getCenter", [id]);
     },
 
+	setTilt: function (center, successCallback, errorCallback, id) {
+    	id = id || 0;
+    	cordova.exec(successCallback, errorCallback, "Mapbox", "setTilt", [id, center]);
+	},
+
+	getTilt: function (center, successCallback, errorCallback, id) {
+    	id = id || 0;
+    	cordova.exec(successCallback, errorCallback, "Mapbox", "getTilt", [id, center]);
+	},
+
     // getNextPositions: function (delta, successCallback, errorCallback, id) {
     //     id = id || 0;
     //     cordova.exec(successCallback, errorCallback, "Mapbox", "nextMarkersPositionsPredicate", [id, delta]);
