@@ -123,7 +123,7 @@
                         {
                             'idXXXX': 'VIN000001',
                             'lat': 52.3732160,
-                            'lng': 4.8941680,
+                            'lng': 13.8941680,
                             'title': 'Nice location',
                             'subtitle': 'Really really nice location',
                             'image': 'www/img/markers/hi.jpg' // TODO support this on a rainy day
@@ -171,7 +171,22 @@
     }
 
     function hideMap() {
-        Mapbox.removeMarker('VIN000001',
+//        Mapbox.removeMarker('VIN000001',
+//                function (result) {
+//                    console.log(JSON.stringify(result));
+//                },
+//                function (error) {
+//                    alert(error);
+//                }
+//        )
+
+        Mapbox.updateSource({'idXXXX': 'VIN000001',
+                    'lat': 51.3732160,
+                    'lng': 13.8941680,
+                    'title': 'Nice location',
+                    'subtitle': 'Really really nice location',
+                    'image': 'www/img/markers/hi.jpg' // TODO support this on a rainy day
+                },
                 function (result) {
                     console.log(JSON.stringify(result));
                 },
@@ -192,15 +207,15 @@
             points: [
                 {
                     'lat': 52.3832160,
-                    'lng': 4.8991680
+                    'lng': 13.6011680
                 },
                 {
                     'lat': 52.3632160,
-                    'lng': 4.9011680
+                    'lng': 13.7011680
                 },
                 {
                     'lat': 52.3932160,
-                    'lng': 4.8911680
+                    'lng': 13.8911680
                 }
             ]
         });
@@ -211,7 +226,7 @@
             // Sets the center of the map to Maracanã
             target: {
                 lat: 52.3632160,
-                lng: 4.9011680
+                lng: 13.6011680
             },
             zoom: 17, // Android, zoomLevel
             altitude: 1000, // iOS, meters from the ground
@@ -226,7 +241,7 @@
                     {
                         'idXXXX': 'VIN0002',
                         'lat': 52.3602160,
-                        'lng': 4.8891680,
+                        'lng': 13.2891680,
                         'title': 'One-line title here', // no popup unless set
                         'subtitle': 'This text can span multiple lines on Android only. On iOS it\'s one line max.',
                         'image': 'www/img/markers/hi.jpg' // TODO support this on a rainy day
@@ -234,7 +249,7 @@
                     {
                         'idXXXX': 'VIN0003',
                         'lat': 52.3702160,
-                        'lng': 4.8911680,
+                        'lng': 13.4891680,
                         'title': 'Nu subtitle for this one' // iOS: no popup unless set, Android: an empty popup -- so please add something
                     }
                 ],
