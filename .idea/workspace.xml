@@ -4,12 +4,12 @@
     <list default="true" id="e9006f9f-7759-4b21-afe9-d260431aea86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcworkspace/xcuserdata/mihribanminaz.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcworkspace/xcuserdata/mihribanminaz.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/mihribanminaz.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/mihribanminaz.xcuserdatad/xcschemes/xcschememanagement.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcodeproj/xcuserdata/mihribanminaz.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial.xcodeproj/xcuserdata/mihribanminaz.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Images.xcassets/AppIcon.appiconset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/CDVMapbox.h" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/CDVMapbox.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/MapController.h" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/MapController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/MapController.m" afterPath="$PROJECT_DIR$/platforms/ios/MapboxTrial/Plugins/cordova-plugin-mapbox/MapController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="MapboxTrial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2805">
-              <caret line="187" column="26" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="26" />
+            <state relative-caret-position="422">
+              <caret line="255" column="42" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapOverlayDebugLayer.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapOverlayDebugLayer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapOverlayDebugLayer.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -108,8 +108,17 @@
         <entry file="file://$PROJECT_DIR$/platforms/ios/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+                <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+                <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+                <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+                <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+                <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+                <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+                <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,11 +137,11 @@
         <option value="$PROJECT_DIR$/../Mapbox/www/Mapbox.js" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/www/Mapbox.js" />
         <option value="$PROJECT_DIR$/www/css/index.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/CDVMapbox.m" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/Map.m" />
-        <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapOverlayDebugLayer.h" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapsManager.m" />
+        <option value="$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapOverlayDebugLayer.h" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -143,8 +152,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1826" />
-    <option name="y" value="79" />
+    <option name="x" value="1493" />
+    <option name="y" value="167" />
     <option name="width" value="1860" />
     <option name="height" value="897" />
   </component>
@@ -195,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,10 +297,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mapbox" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -369,18 +378,19 @@
       <workItem from="1487242438836" duration="12212000" />
       <workItem from="1487264294675" duration="5505000" />
       <workItem from="1487585496132" duration="12000" />
-      <workItem from="1487601827888" duration="1639000" />
+      <workItem from="1487601827888" duration="1750000" />
+      <workItem from="1487669971294" duration="2948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24845000" />
+    <option name="totallyTimeSpent" value="27904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1826" y="79" width="1860" height="897" extended-state="0" />
+    <frame x="1493" y="167" width="1860" height="897" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1680261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1680261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -414,7 +424,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/www/index.html</url>
-          <line>157</line>
+          <line>158</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -485,7 +495,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+            <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+            <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="187" column="26" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/CDVMapbox.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/Map.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="192" column="34" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapOverlayDebugLayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/src/ios/MapsManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-mapbox/demo/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5205">
+          <caret line="347" column="27" selection-start-line="347" selection-start-column="27" selection-end-line="347" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/ios/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+            <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+            <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -551,7 +645,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+            <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+            <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,7 +688,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+            <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+            <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,8 +793,17 @@
     <entry file="file://$PROJECT_DIR$/platforms/ios/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1487679825000" expanded="true" signature="2873:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="2895:4245" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3035:3136" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3176:3498" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3212:3325" ph="{...}" />
+            <marker date="1487679825000" expanded="true" signature="3662:4156" ph="//..." />
+            <marker date="1487679825000" expanded="true" signature="4188:4245" ph="[...]" />
+            <marker date="1487679825000" expanded="true" signature="4214:4245" ph="{&quot;idXXXX&quot;: 'VIN000001'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,16 +820,6 @@
         <state relative-caret-position="390">
           <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="187" column="26" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,6 +852,16 @@
         <state relative-caret-position="300">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="255" column="42" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

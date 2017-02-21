@@ -16,24 +16,25 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		DA91100A59C6454B85F3D3EE /* CDVMapbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B61971B23E048408C63B389 /* CDVMapbox.m */; };
-		8DE59B3278754B2E8627380E /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEAAE7CB1FC495DA94E2935 /* Map.m */; };
-		F9D60AADA2B34B39AA494618 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3B75A78554E978FE647C2 /* MapController.m */; };
-		1E93043187C84FD683DA4047 /* MapOverlayDebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF76F1BCE3904DBF80B4AE11 /* MapOverlayDebugLayer.m */; };
-		BBACBC6B327443C4A6F38E17 /* MapsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33243BBD673E4DA680ECE136 /* MapsManager.m */; };
-		8B3261EA428E4BDBA4CD31F8 /* PluginLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F65C8F6CF76F4989B048C49E /* PluginLayout.m */; };
-		E9DFA6A1E0A441159236970A /* PluginScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BE70BC7234CF59BC83C8E /* PluginScrollLayout.m */; };
-		EB0F66C0FB8047259AADCDF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C873248CF14742F6AA0E548F /* Images.xcassets */; };
-		2040566F8F4B42FF9DBB2F0C /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D249E5A117484357BA547DE5 /* Mapbox.bundle */; };
-		FE991A18982945DE92B67B0A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50BBAB0F02E64206A36B952E /* Settings.bundle */; };
-		3ED3ACA527764C47B415AC6D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA3C0112FFA4B628C0B4BC8 /* Mapbox.framework */; };
-		D7BA45BADBDB4F2380C8A5CF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9982B6DC1A754EF2A3EC336C /* GLKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		8AC9EA6C52954C699AC81F63 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F424C2B68D9442488DE833F /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		9691C712E0BF42F199CD6879 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4100BC09AB49B6AA0CB865 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		01004A97AA9F47C4B8A60F36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407248D7B54D41A589CC525C /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4C5017B5CD93470DB9F47122 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B31061B4A64A8AAC054B97 /* libc++.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2388FF4A906047A1B6DEBFA9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCC638CF0D4453E9E73922C /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D7D1234470064C7CBFAFCE75 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F2D20DD46F4DE6AE3239A3 /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		148F853F1A1941F1B99DF287 /* CDVMapbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 588EFF99F48E477B9274054A /* CDVMapbox.m */; };
+		F05062395BC54589A9C3EDEB /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = C410C77C212641568E9A44EF /* Map.m */; };
+		3E0607604D964B35B48AC872 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D2E10716CC4774B22C6E2B /* MapController.m */; };
+		D1AA5613765E444DBA7CC2B8 /* MapOverlayDebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF75687C8234E86B1991CDB /* MapOverlayDebugLayer.m */; };
+		9B93AED6AEB94B2A91B02927 /* MapsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DEC68DBD942339E74D72D /* MapsManager.m */; };
+		CBF18A481D0242DABC78F413 /* PluginLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E97D13EDBA24CF8A1625E00 /* PluginLayout.m */; };
+		EC922DE8E25D4AC482982B78 /* PluginScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 107C1A24F4EC4E589F8D5E91 /* PluginScrollLayout.m */; };
+		2D324A521E224EDBB9784B3D /* UnuAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B44B4F0E5DC845758012AA06 /* UnuAnnotation.m */; };
+		87DDC26212794DD19CC1A4F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C23D0ED22274E8BB51859D0 /* Images.xcassets */; };
+		FAA35405E19443BBA8E17947 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4234F45E69AC4F8D8756F1FA /* Mapbox.bundle */; };
+		F91FA3864DEA49969A64F476 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFFA84D56A4B405DB9064395 /* Settings.bundle */; };
+		BE86F4FC13774AD390972F82 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B3A10E195F4C2A9A44B394 /* Mapbox.framework */; };
+		958AE248579741578A6AE3E9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746A5B2BD10B4A4DA1E5EE98 /* GLKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B693003EF50C442283985DDC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC714F8D2614BD1AD99E82D /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		335BAA60E2354E5FBFD239F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067B5D5E0312420FA55AE8C8 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		38C495C68808412C99953377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F13BF4D3814C20BF5F6A97 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3D286752889D475BACB29113 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3707F98C31145C698EF810A /* libc++.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		779336F147FA43ADA34B2744 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE48F96B2AC4F25A3E39852 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E52D9EFACF4A4C958322C58D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613978CF9174475A9944D36 /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,54 +75,56 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "MapboxTrial/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		0B61971B23E048408C63B389 /* CDVMapbox.m */ = {isa = PBXFileReference; name = "CDVMapbox.m"; path = "cordova-plugin-mapbox/CDVMapbox.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		CFEAAE7CB1FC495DA94E2935 /* Map.m */ = {isa = PBXFileReference; name = "Map.m"; path = "cordova-plugin-mapbox/Map.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		4EE3B75A78554E978FE647C2 /* MapController.m */ = {isa = PBXFileReference; name = "MapController.m"; path = "cordova-plugin-mapbox/MapController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		DF76F1BCE3904DBF80B4AE11 /* MapOverlayDebugLayer.m */ = {isa = PBXFileReference; name = "MapOverlayDebugLayer.m"; path = "cordova-plugin-mapbox/MapOverlayDebugLayer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		33243BBD673E4DA680ECE136 /* MapsManager.m */ = {isa = PBXFileReference; name = "MapsManager.m"; path = "cordova-plugin-mapbox/MapsManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		F65C8F6CF76F4989B048C49E /* PluginLayout.m */ = {isa = PBXFileReference; name = "PluginLayout.m"; path = "cordova-plugin-mapbox/PluginLayout.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		F37BE70BC7234CF59BC83C8E /* PluginScrollLayout.m */ = {isa = PBXFileReference; name = "PluginScrollLayout.m"; path = "cordova-plugin-mapbox/PluginScrollLayout.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C33A71EEFF9B4449843A0496 /* CDVMapbox.h */ = {isa = PBXFileReference; name = "CDVMapbox.h"; path = "cordova-plugin-mapbox/CDVMapbox.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D31A9B43FD8E4C74AAC6C3DD /* Map.h */ = {isa = PBXFileReference; name = "Map.h"; path = "cordova-plugin-mapbox/Map.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		4EBF7CC0AA7540CEBCA493E9 /* MapController.h */ = {isa = PBXFileReference; name = "MapController.h"; path = "cordova-plugin-mapbox/MapController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		C4DB60E752CA43DBA3D901C8 /* MapOverlayDebugLayer.h */ = {isa = PBXFileReference; name = "MapOverlayDebugLayer.h"; path = "cordova-plugin-mapbox/MapOverlayDebugLayer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		6E1B3766118F4B9782243ACC /* MapsManager.h */ = {isa = PBXFileReference; name = "MapsManager.h"; path = "cordova-plugin-mapbox/MapsManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		F7C30E693FA34CB49491ACD4 /* PluginLayout.h */ = {isa = PBXFileReference; name = "PluginLayout.h"; path = "cordova-plugin-mapbox/PluginLayout.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		3BD4D876D5444DEBB150FE1C /* PluginScrollLayout.h */ = {isa = PBXFileReference; name = "PluginScrollLayout.h"; path = "cordova-plugin-mapbox/PluginScrollLayout.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		3151E03F6F4B48D8AE9E7370 /* Mapbox.h */ = {isa = PBXFileReference; name = "Mapbox.h"; path = "cordova-plugin-mapbox/Mapbox.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		3E8F360F33164F7298788509 /* MGLAccountManager.h */ = {isa = PBXFileReference; name = "MGLAccountManager.h"; path = "cordova-plugin-mapbox/MGLAccountManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		67E49B2C4CB34365A0073246 /* MGLAnnotation.h */ = {isa = PBXFileReference; name = "MGLAnnotation.h"; path = "cordova-plugin-mapbox/MGLAnnotation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		157EC40E3A7A47E494C59A1C /* MGLAnnotationImage.h */ = {isa = PBXFileReference; name = "MGLAnnotationImage.h"; path = "cordova-plugin-mapbox/MGLAnnotationImage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		CC581EDB752C4D019AC8B2C5 /* MGLCalloutView.h */ = {isa = PBXFileReference; name = "MGLCalloutView.h"; path = "cordova-plugin-mapbox/MGLCalloutView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		5309646B3E6F49D489469557 /* MGLGeometry.h */ = {isa = PBXFileReference; name = "MGLGeometry.h"; path = "cordova-plugin-mapbox/MGLGeometry.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		579D1A07F3EB41B78492DB90 /* MGLMapCamera.h */ = {isa = PBXFileReference; name = "MGLMapCamera.h"; path = "cordova-plugin-mapbox/MGLMapCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		489664D2E03849B0AE659281 /* MGLMapView.h */ = {isa = PBXFileReference; name = "MGLMapView.h"; path = "cordova-plugin-mapbox/MGLMapView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D80A0735735C47E6A76AF6A7 /* MGLMapView+IBAdditions.h */ = {isa = PBXFileReference; name = "MGLMapView+IBAdditions.h"; path = "cordova-plugin-mapbox/MGLMapView+IBAdditions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		F72DAE07E9D94CB48C658884 /* MGLMapView+MGLCustomStyleLayerAdditions.h */ = {isa = PBXFileReference; name = "MGLMapView+MGLCustomStyleLayerAdditions.h"; path = "cordova-plugin-mapbox/MGLMapView+MGLCustomStyleLayerAdditions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		C630F088F74344838B4B9B6D /* MGLMultiPoint.h */ = {isa = PBXFileReference; name = "MGLMultiPoint.h"; path = "cordova-plugin-mapbox/MGLMultiPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		28F163F54EBD4E4D95D93F3B /* MGLOfflinePack.h */ = {isa = PBXFileReference; name = "MGLOfflinePack.h"; path = "cordova-plugin-mapbox/MGLOfflinePack.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		080EFE01C08C40EFA1281737 /* MGLOfflineRegion.h */ = {isa = PBXFileReference; name = "MGLOfflineRegion.h"; path = "cordova-plugin-mapbox/MGLOfflineRegion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		A66B6A3CEB84479FA0D79054 /* MGLOfflineStorage.h */ = {isa = PBXFileReference; name = "MGLOfflineStorage.h"; path = "cordova-plugin-mapbox/MGLOfflineStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		68BE47EC68D9492A8BF63C08 /* MGLOverlay.h */ = {isa = PBXFileReference; name = "MGLOverlay.h"; path = "cordova-plugin-mapbox/MGLOverlay.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		09D9526434D34DA3945EA557 /* MGLPointAnnotation.h */ = {isa = PBXFileReference; name = "MGLPointAnnotation.h"; path = "cordova-plugin-mapbox/MGLPointAnnotation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		9A54AA8751334C8FA1ED47B7 /* MGLPolygon.h */ = {isa = PBXFileReference; name = "MGLPolygon.h"; path = "cordova-plugin-mapbox/MGLPolygon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		35F3F426E280413C8E29F606 /* MGLPolyline.h */ = {isa = PBXFileReference; name = "MGLPolyline.h"; path = "cordova-plugin-mapbox/MGLPolyline.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		DB1DBD96D8C043B0B3D01E56 /* MGLShape.h */ = {isa = PBXFileReference; name = "MGLShape.h"; path = "cordova-plugin-mapbox/MGLShape.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		7E54E12705644922AAE48E2E /* MGLStyle.h */ = {isa = PBXFileReference; name = "MGLStyle.h"; path = "cordova-plugin-mapbox/MGLStyle.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		EC194ACDA1994305BCF8642F /* MGLTilePyramidOfflineRegion.h */ = {isa = PBXFileReference; name = "MGLTilePyramidOfflineRegion.h"; path = "cordova-plugin-mapbox/MGLTilePyramidOfflineRegion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		C9EBA35A132B49FABF6C01D2 /* MGLTypes.h */ = {isa = PBXFileReference; name = "MGLTypes.h"; path = "cordova-plugin-mapbox/MGLTypes.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		992B43C3074B4DF2B056460F /* MGLUserLocation.h */ = {isa = PBXFileReference; name = "MGLUserLocation.h"; path = "cordova-plugin-mapbox/MGLUserLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		C873248CF14742F6AA0E548F /* Images.xcassets */ = {isa = PBXFileReference; name = "Images.xcassets"; path = "Images.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
-		D249E5A117484357BA547DE5 /* Mapbox.bundle */ = {isa = PBXFileReference; name = "Mapbox.bundle"; path = "Mapbox.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
-		50BBAB0F02E64206A36B952E /* Settings.bundle */ = {isa = PBXFileReference; name = "Settings.bundle"; path = "Settings.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
-		8AA3C0112FFA4B628C0B4BC8 /* Mapbox.framework */ = {isa = PBXFileReference; name = "Mapbox.framework"; path = "MapboxTrial/Plugins/cordova-plugin-mapbox/Mapbox.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		9982B6DC1A754EF2A3EC336C /* GLKit.framework */ = {isa = PBXFileReference; name = "GLKit.framework"; path = "System/Library/Frameworks/GLKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		8F424C2B68D9442488DE833F /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		7E4100BC09AB49B6AA0CB865 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		407248D7B54D41A589CC525C /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		40B31061B4A64A8AAC054B97 /* libc++.dylib */ = {isa = PBXFileReference; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		0DCC638CF0D4453E9E73922C /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		57F2D20DD46F4DE6AE3239A3 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		588EFF99F48E477B9274054A /* CDVMapbox.m */ = {isa = PBXFileReference; name = "CDVMapbox.m"; path = "cordova-plugin-mapbox/CDVMapbox.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C410C77C212641568E9A44EF /* Map.m */ = {isa = PBXFileReference; name = "Map.m"; path = "cordova-plugin-mapbox/Map.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		60D2E10716CC4774B22C6E2B /* MapController.m */ = {isa = PBXFileReference; name = "MapController.m"; path = "cordova-plugin-mapbox/MapController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		BFF75687C8234E86B1991CDB /* MapOverlayDebugLayer.m */ = {isa = PBXFileReference; name = "MapOverlayDebugLayer.m"; path = "cordova-plugin-mapbox/MapOverlayDebugLayer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		700DEC68DBD942339E74D72D /* MapsManager.m */ = {isa = PBXFileReference; name = "MapsManager.m"; path = "cordova-plugin-mapbox/MapsManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8E97D13EDBA24CF8A1625E00 /* PluginLayout.m */ = {isa = PBXFileReference; name = "PluginLayout.m"; path = "cordova-plugin-mapbox/PluginLayout.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		107C1A24F4EC4E589F8D5E91 /* PluginScrollLayout.m */ = {isa = PBXFileReference; name = "PluginScrollLayout.m"; path = "cordova-plugin-mapbox/PluginScrollLayout.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B44B4F0E5DC845758012AA06 /* UnuAnnotation.m */ = {isa = PBXFileReference; name = "UnuAnnotation.m"; path = "cordova-plugin-mapbox/UnuAnnotation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E79593B9D8A048EA8F0903F1 /* CDVMapbox.h */ = {isa = PBXFileReference; name = "CDVMapbox.h"; path = "cordova-plugin-mapbox/CDVMapbox.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7BD5C7F3C9634ECBB0CA0212 /* Map.h */ = {isa = PBXFileReference; name = "Map.h"; path = "cordova-plugin-mapbox/Map.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		793081C031D14B6BB0883302 /* MapController.h */ = {isa = PBXFileReference; name = "MapController.h"; path = "cordova-plugin-mapbox/MapController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BFC92EDC3D83481FB3E6337E /* MapOverlayDebugLayer.h */ = {isa = PBXFileReference; name = "MapOverlayDebugLayer.h"; path = "cordova-plugin-mapbox/MapOverlayDebugLayer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		77A160E6C4994A54B58D2CD8 /* MapsManager.h */ = {isa = PBXFileReference; name = "MapsManager.h"; path = "cordova-plugin-mapbox/MapsManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0CF7CA19C83B4DC5BA91FF50 /* PluginLayout.h */ = {isa = PBXFileReference; name = "PluginLayout.h"; path = "cordova-plugin-mapbox/PluginLayout.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C85D1363DFAB4FA498FD18C5 /* PluginScrollLayout.h */ = {isa = PBXFileReference; name = "PluginScrollLayout.h"; path = "cordova-plugin-mapbox/PluginScrollLayout.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		36645F40987B41A7811D0E30 /* UnuAnnotation.h */ = {isa = PBXFileReference; name = "UnuAnnotation.h"; path = "cordova-plugin-mapbox/UnuAnnotation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		85937B593AE24B7CA5E54E10 /* Mapbox.h */ = {isa = PBXFileReference; name = "Mapbox.h"; path = "cordova-plugin-mapbox/Mapbox.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B894AD25BA0D4557912D200B /* MGLAccountManager.h */ = {isa = PBXFileReference; name = "MGLAccountManager.h"; path = "cordova-plugin-mapbox/MGLAccountManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4C760525B55841098A9E8A87 /* MGLAnnotation.h */ = {isa = PBXFileReference; name = "MGLAnnotation.h"; path = "cordova-plugin-mapbox/MGLAnnotation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		68EA5307971E45899B00D8DA /* MGLAnnotationImage.h */ = {isa = PBXFileReference; name = "MGLAnnotationImage.h"; path = "cordova-plugin-mapbox/MGLAnnotationImage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		882B6C17F30043D09558BD81 /* MGLCalloutView.h */ = {isa = PBXFileReference; name = "MGLCalloutView.h"; path = "cordova-plugin-mapbox/MGLCalloutView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CC2933B27CB64C6B9D40268C /* MGLGeometry.h */ = {isa = PBXFileReference; name = "MGLGeometry.h"; path = "cordova-plugin-mapbox/MGLGeometry.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2D4787B3A1964B03B633F48E /* MGLMapCamera.h */ = {isa = PBXFileReference; name = "MGLMapCamera.h"; path = "cordova-plugin-mapbox/MGLMapCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1625F334BB9A4136B4BBEE63 /* MGLMapView.h */ = {isa = PBXFileReference; name = "MGLMapView.h"; path = "cordova-plugin-mapbox/MGLMapView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		52998F55252C403892A713D8 /* MGLMapView+IBAdditions.h */ = {isa = PBXFileReference; name = "MGLMapView+IBAdditions.h"; path = "cordova-plugin-mapbox/MGLMapView+IBAdditions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8616DFC62FD64A0EBF6ADDD0 /* MGLMapView+MGLCustomStyleLayerAdditions.h */ = {isa = PBXFileReference; name = "MGLMapView+MGLCustomStyleLayerAdditions.h"; path = "cordova-plugin-mapbox/MGLMapView+MGLCustomStyleLayerAdditions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		153E31EAE391431597E684F4 /* MGLMultiPoint.h */ = {isa = PBXFileReference; name = "MGLMultiPoint.h"; path = "cordova-plugin-mapbox/MGLMultiPoint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		09730C458FDB41139A7A19B5 /* MGLOfflinePack.h */ = {isa = PBXFileReference; name = "MGLOfflinePack.h"; path = "cordova-plugin-mapbox/MGLOfflinePack.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CA74FB6C3A7C4E6FB4D0CC59 /* MGLOfflineRegion.h */ = {isa = PBXFileReference; name = "MGLOfflineRegion.h"; path = "cordova-plugin-mapbox/MGLOfflineRegion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C8469A987AB1439C9300E609 /* MGLOfflineStorage.h */ = {isa = PBXFileReference; name = "MGLOfflineStorage.h"; path = "cordova-plugin-mapbox/MGLOfflineStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BEC353011CC84543B0EF3769 /* MGLOverlay.h */ = {isa = PBXFileReference; name = "MGLOverlay.h"; path = "cordova-plugin-mapbox/MGLOverlay.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B13A04B1B1124DA09601020E /* MGLPointAnnotation.h */ = {isa = PBXFileReference; name = "MGLPointAnnotation.h"; path = "cordova-plugin-mapbox/MGLPointAnnotation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CD561A8C7BAD46B7B4A564D3 /* MGLPolygon.h */ = {isa = PBXFileReference; name = "MGLPolygon.h"; path = "cordova-plugin-mapbox/MGLPolygon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7CE8A91FCDE748D596454C75 /* MGLPolyline.h */ = {isa = PBXFileReference; name = "MGLPolyline.h"; path = "cordova-plugin-mapbox/MGLPolyline.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5DEB8A0FA2DE42228CB1852F /* MGLShape.h */ = {isa = PBXFileReference; name = "MGLShape.h"; path = "cordova-plugin-mapbox/MGLShape.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5344F177CE214A4B8520ECBD /* MGLStyle.h */ = {isa = PBXFileReference; name = "MGLStyle.h"; path = "cordova-plugin-mapbox/MGLStyle.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FCF39DCA14D64376AFBA04F1 /* MGLTilePyramidOfflineRegion.h */ = {isa = PBXFileReference; name = "MGLTilePyramidOfflineRegion.h"; path = "cordova-plugin-mapbox/MGLTilePyramidOfflineRegion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		480A95A3A0B849E7A1B5EA36 /* MGLTypes.h */ = {isa = PBXFileReference; name = "MGLTypes.h"; path = "cordova-plugin-mapbox/MGLTypes.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9397FA54A14C4DFBB09BD4D4 /* MGLUserLocation.h */ = {isa = PBXFileReference; name = "MGLUserLocation.h"; path = "cordova-plugin-mapbox/MGLUserLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9C23D0ED22274E8BB51859D0 /* Images.xcassets */ = {isa = PBXFileReference; name = "Images.xcassets"; path = "Images.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
+		4234F45E69AC4F8D8756F1FA /* Mapbox.bundle */ = {isa = PBXFileReference; name = "Mapbox.bundle"; path = "Mapbox.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		DFFA84D56A4B405DB9064395 /* Settings.bundle */ = {isa = PBXFileReference; name = "Settings.bundle"; path = "Settings.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		65B3A10E195F4C2A9A44B394 /* Mapbox.framework */ = {isa = PBXFileReference; name = "Mapbox.framework"; path = "MapboxTrial/Plugins/cordova-plugin-mapbox/Mapbox.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		746A5B2BD10B4A4DA1E5EE98 /* GLKit.framework */ = {isa = PBXFileReference; name = "GLKit.framework"; path = "System/Library/Frameworks/GLKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7AC714F8D2614BD1AD99E82D /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		067B5D5E0312420FA55AE8C8 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		53F13BF4D3814C20BF5F6A97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D3707F98C31145C698EF810A /* libc++.dylib */ = {isa = PBXFileReference; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		DFE48F96B2AC4F25A3E39852 /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		3613978CF9174475A9944D36 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,14 +133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				3ED3ACA527764C47B415AC6D /* Mapbox.framework in Frameworks */,
-				D7BA45BADBDB4F2380C8A5CF /* GLKit.framework in Frameworks */,
-				8AC9EA6C52954C699AC81F63 /* ImageIO.framework in Frameworks */,
-				9691C712E0BF42F199CD6879 /* QuartzCore.framework in Frameworks */,
-				01004A97AA9F47C4B8A60F36 /* SystemConfiguration.framework in Frameworks */,
-				4C5017B5CD93470DB9F47122 /* libc++.dylib in Frameworks */,
-				2388FF4A906047A1B6DEBFA9 /* libsqlite3.dylib in Frameworks */,
-				D7D1234470064C7CBFAFCE75 /* libz.dylib in Frameworks */,
+				BE86F4FC13774AD390972F82 /* Mapbox.framework in Frameworks */,
+				958AE248579741578A6AE3E9 /* GLKit.framework in Frameworks */,
+				B693003EF50C442283985DDC /* ImageIO.framework in Frameworks */,
+				335BAA60E2354E5FBFD239F1 /* QuartzCore.framework in Frameworks */,
+				38C495C68808412C99953377 /* SystemConfiguration.framework in Frameworks */,
+				3D286752889D475BACB29113 /* libc++.dylib in Frameworks */,
+				779336F147FA43ADA34B2744 /* libsqlite3.dylib in Frameworks */,
+				E52D9EFACF4A4C958322C58D /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +203,9 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* MapboxTrial-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
-				C873248CF14742F6AA0E548F /* Images.xcassets */,
-				D249E5A117484357BA547DE5 /* Mapbox.bundle */,
-				50BBAB0F02E64206A36B952E /* Settings.bundle */,
+				9C23D0ED22274E8BB51859D0 /* Images.xcassets */,
+				4234F45E69AC4F8D8756F1FA /* Mapbox.bundle */,
+				DFFA84D56A4B405DB9064395 /* Settings.bundle */,
 			);
 			name = Resources;
 			path = "MapboxTrial/Resources";
@@ -211,14 +214,14 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8AA3C0112FFA4B628C0B4BC8 /* Mapbox.framework */,
-				9982B6DC1A754EF2A3EC336C /* GLKit.framework */,
-				8F424C2B68D9442488DE833F /* ImageIO.framework */,
-				7E4100BC09AB49B6AA0CB865 /* QuartzCore.framework */,
-				407248D7B54D41A589CC525C /* SystemConfiguration.framework */,
-				40B31061B4A64A8AAC054B97 /* libc++.dylib */,
-				0DCC638CF0D4453E9E73922C /* libsqlite3.dylib */,
-				57F2D20DD46F4DE6AE3239A3 /* libz.dylib */,
+				65B3A10E195F4C2A9A44B394 /* Mapbox.framework */,
+				746A5B2BD10B4A4DA1E5EE98 /* GLKit.framework */,
+				7AC714F8D2614BD1AD99E82D /* ImageIO.framework */,
+				067B5D5E0312420FA55AE8C8 /* QuartzCore.framework */,
+				53F13BF4D3814C20BF5F6A97 /* SystemConfiguration.framework */,
+				D3707F98C31145C698EF810A /* libc++.dylib */,
+				DFE48F96B2AC4F25A3E39852 /* libsqlite3.dylib */,
+				3613978CF9174475A9944D36 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,43 +247,45 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				0B61971B23E048408C63B389 /* CDVMapbox.m */,
-				CFEAAE7CB1FC495DA94E2935 /* Map.m */,
-				4EE3B75A78554E978FE647C2 /* MapController.m */,
-				DF76F1BCE3904DBF80B4AE11 /* MapOverlayDebugLayer.m */,
-				33243BBD673E4DA680ECE136 /* MapsManager.m */,
-				F65C8F6CF76F4989B048C49E /* PluginLayout.m */,
-				F37BE70BC7234CF59BC83C8E /* PluginScrollLayout.m */,
-				C33A71EEFF9B4449843A0496 /* CDVMapbox.h */,
-				D31A9B43FD8E4C74AAC6C3DD /* Map.h */,
-				4EBF7CC0AA7540CEBCA493E9 /* MapController.h */,
-				C4DB60E752CA43DBA3D901C8 /* MapOverlayDebugLayer.h */,
-				6E1B3766118F4B9782243ACC /* MapsManager.h */,
-				F7C30E693FA34CB49491ACD4 /* PluginLayout.h */,
-				3BD4D876D5444DEBB150FE1C /* PluginScrollLayout.h */,
-				3151E03F6F4B48D8AE9E7370 /* Mapbox.h */,
-				3E8F360F33164F7298788509 /* MGLAccountManager.h */,
-				67E49B2C4CB34365A0073246 /* MGLAnnotation.h */,
-				157EC40E3A7A47E494C59A1C /* MGLAnnotationImage.h */,
-				CC581EDB752C4D019AC8B2C5 /* MGLCalloutView.h */,
-				5309646B3E6F49D489469557 /* MGLGeometry.h */,
-				579D1A07F3EB41B78492DB90 /* MGLMapCamera.h */,
-				489664D2E03849B0AE659281 /* MGLMapView.h */,
-				D80A0735735C47E6A76AF6A7 /* MGLMapView+IBAdditions.h */,
-				F72DAE07E9D94CB48C658884 /* MGLMapView+MGLCustomStyleLayerAdditions.h */,
-				C630F088F74344838B4B9B6D /* MGLMultiPoint.h */,
-				28F163F54EBD4E4D95D93F3B /* MGLOfflinePack.h */,
-				080EFE01C08C40EFA1281737 /* MGLOfflineRegion.h */,
-				A66B6A3CEB84479FA0D79054 /* MGLOfflineStorage.h */,
-				68BE47EC68D9492A8BF63C08 /* MGLOverlay.h */,
-				09D9526434D34DA3945EA557 /* MGLPointAnnotation.h */,
-				9A54AA8751334C8FA1ED47B7 /* MGLPolygon.h */,
-				35F3F426E280413C8E29F606 /* MGLPolyline.h */,
-				DB1DBD96D8C043B0B3D01E56 /* MGLShape.h */,
-				7E54E12705644922AAE48E2E /* MGLStyle.h */,
-				EC194ACDA1994305BCF8642F /* MGLTilePyramidOfflineRegion.h */,
-				C9EBA35A132B49FABF6C01D2 /* MGLTypes.h */,
-				992B43C3074B4DF2B056460F /* MGLUserLocation.h */,
+				588EFF99F48E477B9274054A /* CDVMapbox.m */,
+				C410C77C212641568E9A44EF /* Map.m */,
+				60D2E10716CC4774B22C6E2B /* MapController.m */,
+				BFF75687C8234E86B1991CDB /* MapOverlayDebugLayer.m */,
+				700DEC68DBD942339E74D72D /* MapsManager.m */,
+				8E97D13EDBA24CF8A1625E00 /* PluginLayout.m */,
+				107C1A24F4EC4E589F8D5E91 /* PluginScrollLayout.m */,
+				B44B4F0E5DC845758012AA06 /* UnuAnnotation.m */,
+				E79593B9D8A048EA8F0903F1 /* CDVMapbox.h */,
+				7BD5C7F3C9634ECBB0CA0212 /* Map.h */,
+				793081C031D14B6BB0883302 /* MapController.h */,
+				BFC92EDC3D83481FB3E6337E /* MapOverlayDebugLayer.h */,
+				77A160E6C4994A54B58D2CD8 /* MapsManager.h */,
+				0CF7CA19C83B4DC5BA91FF50 /* PluginLayout.h */,
+				C85D1363DFAB4FA498FD18C5 /* PluginScrollLayout.h */,
+				36645F40987B41A7811D0E30 /* UnuAnnotation.h */,
+				85937B593AE24B7CA5E54E10 /* Mapbox.h */,
+				B894AD25BA0D4557912D200B /* MGLAccountManager.h */,
+				4C760525B55841098A9E8A87 /* MGLAnnotation.h */,
+				68EA5307971E45899B00D8DA /* MGLAnnotationImage.h */,
+				882B6C17F30043D09558BD81 /* MGLCalloutView.h */,
+				CC2933B27CB64C6B9D40268C /* MGLGeometry.h */,
+				2D4787B3A1964B03B633F48E /* MGLMapCamera.h */,
+				1625F334BB9A4136B4BBEE63 /* MGLMapView.h */,
+				52998F55252C403892A713D8 /* MGLMapView+IBAdditions.h */,
+				8616DFC62FD64A0EBF6ADDD0 /* MGLMapView+MGLCustomStyleLayerAdditions.h */,
+				153E31EAE391431597E684F4 /* MGLMultiPoint.h */,
+				09730C458FDB41139A7A19B5 /* MGLOfflinePack.h */,
+				CA74FB6C3A7C4E6FB4D0CC59 /* MGLOfflineRegion.h */,
+				C8469A987AB1439C9300E609 /* MGLOfflineStorage.h */,
+				BEC353011CC84543B0EF3769 /* MGLOverlay.h */,
+				B13A04B1B1124DA09601020E /* MGLPointAnnotation.h */,
+				CD561A8C7BAD46B7B4A564D3 /* MGLPolygon.h */,
+				7CE8A91FCDE748D596454C75 /* MGLPolyline.h */,
+				5DEB8A0FA2DE42228CB1852F /* MGLShape.h */,
+				5344F177CE214A4B8520ECBD /* MGLStyle.h */,
+				FCF39DCA14D64376AFBA04F1 /* MGLTilePyramidOfflineRegion.h */,
+				480A95A3A0B849E7A1B5EA36 /* MGLTypes.h */,
+				9397FA54A14C4DFBB09BD4D4 /* MGLUserLocation.h */,
 			);
 			name = Plugins;
 			path = "MapboxTrial/Plugins";
@@ -362,9 +367,9 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
-				EB0F66C0FB8047259AADCDF8 /* Images.xcassets in Resources */,
-				2040566F8F4B42FF9DBB2F0C /* Mapbox.bundle in Resources */,
-				FE991A18982945DE92B67B0A /* Settings.bundle in Resources */,
+				87DDC26212794DD19CC1A4F6 /* Images.xcassets in Resources */,
+				FAA35405E19443BBA8E17947 /* Mapbox.bundle in Resources */,
+				F91FA3864DEA49969A64F476 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,13 +401,14 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				DA91100A59C6454B85F3D3EE /* CDVMapbox.m in Sources */,
-				8DE59B3278754B2E8627380E /* Map.m in Sources */,
-				F9D60AADA2B34B39AA494618 /* MapController.m in Sources */,
-				1E93043187C84FD683DA4047 /* MapOverlayDebugLayer.m in Sources */,
-				BBACBC6B327443C4A6F38E17 /* MapsManager.m in Sources */,
-				8B3261EA428E4BDBA4CD31F8 /* PluginLayout.m in Sources */,
-				E9DFA6A1E0A441159236970A /* PluginScrollLayout.m in Sources */,
+				148F853F1A1941F1B99DF287 /* CDVMapbox.m in Sources */,
+				F05062395BC54589A9C3EDEB /* Map.m in Sources */,
+				3E0607604D964B35B48AC872 /* MapController.m in Sources */,
+				D1AA5613765E444DBA7CC2B8 /* MapOverlayDebugLayer.m in Sources */,
+				9B93AED6AEB94B2A91B02927 /* MapsManager.m in Sources */,
+				CBF18A481D0242DABC78F413 /* PluginLayout.m in Sources */,
+				EC922DE8E25D4AC482982B78 /* PluginScrollLayout.m in Sources */,
+				2D324A521E224EDBB9784B3D /* UnuAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
