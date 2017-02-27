@@ -10,7 +10,7 @@
     "cordova-plugin-mapbox": {
         "source": {
             "type": "local",
-            "path": "../Mapbox"
+            "path": "../cordova-plugin-unu-map"
         },
         "is_top_level": true,
         "variables": {

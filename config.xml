@@ -23,7 +23,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-mapbox" spec="../Mapbox">
+    <plugin name="cordova-plugin-mapbox" spec="../cordova-plugin-unu-map">
         <variable name="ACCESS_TOKEN" value="pk.eyJ1IjoiYXlzZW1pIiwiYSI6ImNpejZ2MGFtcjAwNDYzM213MXQzcnV0cncifQ.Om6KMgvxyi3jVSBeJZz19w" />
     </plugin>
 </widget>
