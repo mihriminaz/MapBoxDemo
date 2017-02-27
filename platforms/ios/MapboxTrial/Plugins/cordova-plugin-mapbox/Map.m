@@ -189,17 +189,14 @@
 }
 
 - (void)onRegionWillChange:(CDVInvokedUrlCommand *)command {
-    NSLog(@"onRegionWillChange Map");
     _mapCtrl.regionWillChangeAnimatedCallbackId = command.callbackId;
 }
 
 - (void)onRegionIsChanging:(CDVInvokedUrlCommand *)command {
-    NSLog(@"onRegionIsChanging Map");
     _mapCtrl.regionIsChangingCallbackId = command.callbackId;
 }
 
 - (void)onRegionDidChange:(CDVInvokedUrlCommand *)command {
-    NSLog(@"onRegionDidChange Map");
     _mapCtrl.regionDidChangeAnimatedCallbackId = command.callbackId;
 }
 
@@ -277,22 +274,8 @@
 - (void) addMarkers:(CDVInvokedUrlCommand*)command {
     NSArray *markers = command.arguments[1];
     if (markers != nil) [_mapCtrl putMarkersOnTheMap:markers];
-    CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Marker is added"];
+    CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"zefzefz"];
     [_cdvMapbox.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void) removeMarker:(CDVInvokedUrlCommand*)command {
-    NSString *annotationId = command.arguments[1];
-    if (annotationId != nil) [_mapCtrl removeAnnotationOnTheMap:annotationId];
-    CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Marker is remove"];
-    [_cdvMapbox.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-
-- (void) updateMarker:(CDVInvokedUrlCommand*)command {
-  NSDictionary *marker = command.arguments[1];
-  if (marker != nil) [_mapCtrl updateMarkerOnTheMap:marker];
-  CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Marker is updated"];
-  [_cdvMapbox.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 

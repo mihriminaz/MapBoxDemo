@@ -29,8 +29,6 @@
 - (CLLocationCoordinate2D) convertPoint:(CGPoint)coordinates;
 
 - (void)putMarkersOnTheMap:(NSArray *)markers;
-- (void)removeAnnotationOnTheMap:(NSString *)annotationId;
-- (void)updateMarkerOnTheMap:(NSDictionary *)annotationId;
 
 - (void)setFrame:(CGRect) mapFrame;
 

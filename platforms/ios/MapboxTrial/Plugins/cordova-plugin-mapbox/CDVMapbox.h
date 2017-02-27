@@ -5,7 +5,6 @@
 #import "PluginScrollLayout.h"
 #import "MapsManager.h"
 #import "MGLAccountManager.h"
-#import "UnuAnnotation.h"
 
 @interface CDVMapbox : CDVPlugin<UIScrollViewDelegate>;
 
@@ -41,8 +40,6 @@
 - (void) addGeoJSON:(CDVInvokedUrlCommand *)command;
 - (void) addMarkers:(CDVInvokedUrlCommand *)command;
 - (void) addMarkerCallback:(CDVInvokedUrlCommand *)command;
-- (void) removeMarker:(CDVInvokedUrlCommand *)command;
-- (void) updateMarker:(CDVInvokedUrlCommand *)command;
 
 - (void) convertCoordinate:(CDVInvokedUrlCommand *)command;
 - (void) convertPoint:(CDVInvokedUrlCommand *)command;

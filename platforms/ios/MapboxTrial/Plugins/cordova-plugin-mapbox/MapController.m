@@ -7,7 +7,6 @@
 
 #import "MapController.h"
 #import "MGLPointAnnotation.h"
-#import "UnuAnnotation.h"
 #import "CDVMapbox.h"
 
 @interface MapController()
@@ -16,7 +15,6 @@
     NSDictionary* _initArgs;
     CDVMapbox *_cdvMapbox;
     CGRect _mapFrame;
-    NSMutableArray* _existingAnnotationsArray;
 }
 @end
 
@@ -27,7 +25,6 @@
     _initArgs = [[NSDictionary alloc] initWithDictionary:args];
     _cdvMapbox = plugin;
     _mapFrame = mapFrame;
-    _existingAnnotationsArray = [[NSMutableArray alloc] init];
     self.webView = _cdvMapbox.webView;
 
     return self;
@@ -138,57 +135,17 @@
     [_cdvMapbox.commandDelegate runInBackground:^{
         for (int i = 0; i < markers.count; i++) {
             NSDictionary* marker = markers[i];
-
-            NSString *annotationIdentifier = [marker valueForKey:@"annotationIdentifier"];
-            UnuAnnotationType annotationType = [[marker valueForKey:@"annotationType"] intValue];
-
-            UnuAnnotation *unuAnnotation = [[UnuAnnotation alloc] initWithIdentifier:annotationIdentifier withAnnotationType:annotationType];
+            MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
             NSNumber *lat = [marker valueForKey:@"lat"];
             NSNumber *lng = [marker valueForKey:@"lng"];
-            unuAnnotation.coordinate = CLLocationCoordinate2DMake(lat.doubleValue, lng.doubleValue);
-            unuAnnotation.title = [marker valueForKey:@"title"];
-            unuAnnotation.subtitle = [marker valueForKey:@"subtitle"];
-            [_existingAnnotationsArray addObject:unuAnnotation];
-            [self.mapView addAnnotation:unuAnnotation];
+            point.coordinate = CLLocationCoordinate2DMake(lat.doubleValue, lng.doubleValue);
+            point.title = [marker valueForKey:@"title"];
+            point.subtitle = [marker valueForKey:@"subtitle"];
+            [self.mapView addAnnotation:point];
         }
     }];
 }
 
-- (void)removeAnnotationOnTheMap:(NSString *)annotationId {
-    for (int i = 0; i < _existingAnnotationsArray.count; i++) {
-        UnuAnnotation *existingAnnotation = _existingAnnotationsArray[i];
-        if (existingAnnotation.annotationIdentifier == annotationId) {
-            [_cdvMapbox.commandDelegate runInBackground:^{
-                [self.mapView removeAnnotation:existingAnnotation];
-            }];
-        }
-    }
-}
-
-- (void)updateMarkerOnTheMap:(NSDictionary *)marker {
-  for (int i = 0; i < _existingAnnotationsArray.count; i++) {
-    UnuAnnotation *existingAnnotation = _existingAnnotationsArray[i];
-    NSString *annotationIdentifier = [marker valueForKey:@"annotationIdentifier"];
-
-    if (existingAnnotation.annotationIdentifier == annotationIdentifier) {
-      [_cdvMapbox.commandDelegate runInBackground:^{
-        [self.mapView removeAnnotation:existingAnnotation];
-        [self putMarkersOnTheMap:[[NSArray alloc] initWithObjects:marker, nil]];
-      }];
-    }
-  }
-}
-
-- (nullable MGLAnnotationImage *)mapView:(MGLMapView *)mapView imageForAnnotation:(id <MGLAnnotation>)annotation {
-
-    if ([annotation isKindOfClass:[UnuAnnotation class]]) {
-        UnuAnnotation *anUnuAnnotation = (UnuAnnotation*)annotation;
-        MGLAnnotationImage *anAnnotationImage = [MGLAnnotationImage annotationImageWithImage:[UIImage imageNamed: anUnuAnnotation.annotationImage] reuseIdentifier:anUnuAnnotation.annotationImage];
-        return anAnnotationImage;
-    }
-    return nil;
-
-}
 
 // this method is invoked every time an annotation is clicked
 - (BOOL)mapView:(MGLMapView *)mapView annotationCanShowCallout:(id <MGLAnnotation>)annotation {
